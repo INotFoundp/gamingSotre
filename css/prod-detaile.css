@@ -1,0 +1,248 @@
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8em 1.5em;
+    width: 100%;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1em 0 .5em 0;
+}
+
+
+header nav .logo img {
+    margin: 0 .4em 0 0;
+}
+
+header nav .back-button i {
+    font-size: 2.4em;
+    margin: 0 0 0 .5em;
+}
+
+header nav .back-button i:hover {
+    color: var(--textColorHover);
+}
+
+/* main */
+
+
+/* prod Section */
+.prod {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 1em auto;
+}
+
+.prod .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+}
+
+.prod .description-prod {
+    width: 30%;
+}
+
+.prod .images .main-image {
+    width: 90%;
+    margin: auto;
+    margin: 0 0 1.3em 0;
+}
+
+.images .main-image img {
+    width: 100%;
+    border-radius: 1em;
+    filter: drop-shadow(0 0 4px #12121170);
+}
+
+.images .little-image {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 5px;
+    margin: 1em auto;
+    /* background-color: blue; */
+}
+
+.images .little-image figure {
+    width: 30%;
+}
+
+.images .little-image figure img {
+    width: 100%;
+    border-radius: .4em;
+    border: 1px solid #121211;
+    cursor: pointer;
+}
+
+.prod .description-prod .prod-name {
+    margin: 1em auto;
+    text-align: center;
+    width: 80%;
+}
+
+
+.prod .description-prod .prod-name h2 {
+    font-size: 2em;
+    color: var(--textColorHover);
+}
+
+
+.description-prod .prod-info {
+    width: 70%;
+    margin: .6em auto;
+    overflow: hidden;
+}
+
+.description-prod .prod-info p {
+    font-size: 1.1em;
+    font-family: sans-serif;
+    text-align: left;
+    direction: ltr;
+}
+
+.description-prod .buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 80%;
+    border: 1px solid var(--goldBoxColor);
+    border-radius: 2em;
+    margin: 3.7em auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.description-prod .buy span {
+    font-size: 1.3em;
+    font-family: sans-serif;
+    direction: ltr;
+    color: var(--goldBoxColor);
+    margin: 0 0 0 1em;
+    transition: all .3s;
+}
+
+.buy i {
+    margin-right: .5em;
+    height: 100%;
+    padding: 1.2em .8em;
+    border-left: 1px solid var(--goldBoxColor);
+    color: var(--goldBoxColor);
+}
+
+.description-prod .buy::before {
+    content: 'افزودن به سبد خرید ';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    position: absolute;
+    inset: 0;
+    background-color: var(--goldBoxColor);
+    color: var(--textColorHover);
+    z-index: -1;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    text-shadow: 1px 1px 2px #121212;
+
+}
+
+.description-prod .buy:hover {
+    border: 1px solid #121211;
+}
+
+.description-prod .buy:hover::before {
+    width: 100%;
+    opacity: 1;
+    font-size: 1.3em;
+    visibility: visible;
+}
+
+.description-prod .buy:hover span {
+    visibility: hidden;
+
+}
+
+.system-req {
+    width: 90%;
+    margin: 1em auto;
+
+}
+
+.system-req .titel {
+    padding: .5em;
+    /* margin: 1em .5em 1em 0; */
+}
+
+.system-req .titel h4 {
+    font-size: 2em;
+    font-family: dehghan;
+}
+
+.system-req .system-req-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5em auto 0 auto;
+    width: 80%;
+    direction: ltr;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.system-req .system-req-info .min,
+.system-req .system-req-info .max {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 3em;
+    margin: auto;
+    position: relative;
+    
+}
+
+.system-req .system-req-info .max::after{
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: var(--textColorHover);
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+
+.system-req .system-req-info .system-req-titel {
+    margin: 1em .4em;
+    direction: rtl;
+    font-family: dehghan;
+    font-size: 2em;
+}
+
+.system-req-info .max-information,
+.system-req-info .min-information {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.req{
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 2;
+}

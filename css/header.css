@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    font-family: Lalezar;
+    margin: auto;
+
+}
+
+header .logo {
+    position: relative;
+    width: 15%;
+    height: 100%;
+}
+
+header .logo img {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 80%;
+    margin: auto;
+}
+
+
+header nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: auto;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+
+header nav ul li {
+    padding: 5px;
+    transition: all .2s;
+
+}
+
+header nav ul li a {
+    color: var(--textColor);
+    transition: all .2s;
+
+}
+
+header nav ul li:hover {
+    
+    animation: shakeAnimate 500ms ease-in-out;
+}
+
+header nav ul li:hover a {
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.507);
+    color: var(--textColorHover);
+    
+}
+
+
+header .sign {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .sign .links {
+    border: 1px solid var(--goldBoxColor);
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.sign .links a,
+.sign .links span {
+    color: var(--textColor);
+}
+
+.sign .links a:hover {
+    color: var(--textColorHover);
+}
+
+@keyframes shakeAnimate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

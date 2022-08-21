@@ -1,0 +1,25 @@
+@font-face {
+    font-family: IranSans;
+    src: url(../font/IranSans/IRANSansMed.ttf);
+}
+
+@font-face {
+    font-family: Dehghan;
+    src: url(../font/Dahgan/DahganRegular.ttf);
+}
+
+@font-face {
+    font-family: Lalezar;
+    src: url(../font/Lalezar-Font/OTF/Lalezar-Regular.otf);
+    src: url(../font/Lalezar-Font/TTF/Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: kalameh;
+    src: url(../font/kalameh/Alibaba-Regular.woff);
+}
+
+@font-face {
+    font-family: azn;
+    src: url(../font/azn/AznKnucklesTrial-z85pa.otf);
+}

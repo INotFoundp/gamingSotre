@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/96272f61bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/backgroundAnimation.css">
+    <link rel="stylesheet" href="css/scrollBar.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Products</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header></header>
+        <main>
+            <div class="alert">
+                <span class="alert-prod-name">God Of War</span>
+                <span class="alert-messege">اضافه شد</span>
+            </div>
+            <div class="shopbasket">
+                <div class="shohBtn">
+                    <i id="showUserBasket" class="fa-solid fa-basket-shopping"></i>
+                </div>
+                <div class="shopping-basket-modal">
+                    <div class="title">
+                        <h3>
+                            سبد خرید
+                        </h3>
+                    </div>
+                    <div class="basket-item">
+
+                    </div>
+                    <div class="result-basket">
+                        <div class="total">
+                            <span class="total-price">0</span>
+                            <span>: جمع قیمت</span>
+                        </div>
+                        <div class="buy">
+                            <button>پرداخت</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="top-prod">
+                    <div class="title">
+                        <h3>
+                            محصولات برتر
+                        </h3>
+                    </div>
+                    <div class="cards top-card">
+
+                    </div>
+                    <div class="pagemation topPagement">
+
+                    </div>
+                </div>
+                <div class="allProd">
+                    <div class="title">
+                        <h3>
+                            تمام محصولات
+                        </h3>
+                    </div>
+
+                    <div class="filter">
+                        <i id="filterButton" class="fa-solid fa-filter"></i>
+                        <div class="filter-option">
+                            <select name="selectPlat" id="select-platform">
+                                <option value="choose">No Filter ...</option>
+                                <option value="PC">PC Platform</option>
+                                <option value="Xbox">Xbox Platform</option>
+                                <option value="PS">PlatStation Platform</option>
+                                <option value="NT">Nintendo Platform</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cards allProduct">
+
+                    </div>
+                    <div class="pagemation allPagement">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    </div>
+
+    <script src="js/animatedBackground.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/dynamicProductProdPage.js" type="module"></script>
+    <script src="js/addProdToBasket.js" type="module"></script>
+</body>
+
+</html>

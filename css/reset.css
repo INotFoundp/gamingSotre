@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+select button{
+    border: none;
+    outline: none;
+}
+
+option{
+    background-color: transparent;
+    
+}
